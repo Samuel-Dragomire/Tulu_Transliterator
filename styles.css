@@ -1,7 +1,7 @@
 /* Define the custom font */
 @font-face {
     font-family: 'TULUSRI'; /* Name of the custom font */
-    src: url('fonts/TULUSRI.ttf') format('truetype'); /* Path to the font file */
+    src: url('TULUSRI.ttf') format('truetype'); /* Path to the font file */
     font-weight: normal;
     font-style: normal;
 }
@@ -106,6 +106,18 @@ button:hover {
     font-size: 12px;
     color: #d42121;
 }
+
+#cred {
+    font-size: 15px;
+    color: #000000;
+}
+
+#link {
+    font-size: 15px;
+    color: #156bff;
+    text-align: center;
+}
+
 
 #special {
     font-family: "Courier New", Courier, monospace; /* Font for the letter J */
