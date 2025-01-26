@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulu Transliterator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="page_title">Tulu Transliterator</h1>
+        <h3>"ae" sound represented in Kannada using ೆ ್ - in Tulu, it is represented with "J" before character with "ae" sound</h3>
+        <h3>kODae = ಕೋಡೆ್ = കോJഡ</h3>
+
+        <label for="transliterationType">Select Transliteration Type:</label>
+        <select id="transliterationType">
+            <option value="kn_to_lat">Kannada(ಕ) to Latin</option>
+            <option value="kn_to_tu">Kannada(ಕ) to Tulu(തു)</option>
+            <option value="lat_to_kn">Latin to Kannada(ಕ)</option>
+            <option value="lat_to_tu">Latin to Tulu(തു)</option>
+            
+        </select>
+
+        <textarea id="inputText" spellcheck="false" placeholder="enter text..."></textarea>
+        <button onclick="transliterate()">Transliterate</button>
+
+        <h2>Output:</h2>
+        <p id="outputText"></p>
+        <p id="warning">WARNING: Tulu lipi output is a modified font of Malayalam script (TULUSRI). It cannot render the "J" sound (ae) correctly. Once Unicode Tulu becomes more widely used, a proper Tulu lipi will be shown.</p>
+        <p id="grammar"> In Kannada, "ae" is represented as a combination of "e" ೆ and a "mute symbol" ್, thus kODae is represented as ಕೋಡೆ್</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
